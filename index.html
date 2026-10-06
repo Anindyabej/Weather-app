@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="weather-app">
+
+    <section class="weather-card">
+
+      <div class="top-section">
+        <h1>Weather</h1>
+        <p>Check the current weather in your city</p>
+      </div>
+
+      <form class="search-box" id="search-form">
+        <input type="text" id="city-input" placeholder="Enter city name" autocomplete="off" aria-label="City name">
+        <button type="submit" aria-label="Search"><img src="images/searchlogo.png" alt=""></button>
+      </form>
+
+      <p class="error-message" id="error-message" role="alert" hidden></p>
+
+      <div class="weather-info" id="weather-info" hidden>
+
+        <div class="location">
+          <h2 id="city-name"></h2>
+          <p id="date"></p>
+          <img id="weather-image" src="images/clear.png" alt="">
+        </div>
+
+        <div class="temperature">
+          <span id="temperature"></span>
+          <span>°C</span>
+        </div>
+
+        <p class="condition" id="condition"></p>
+
+        <div class="weather-details">
+
+          <div class="detail">
+            <span>Humidity</span>
+            <strong id="humidity"></strong>
+          </div>
+
+          <div class="detail">
+            <span>Wind</span>
+            <strong id="wind"></strong>
+          </div>
+
+          <div class="detail">
+            <span>Feels Like</span>
+            <strong id="feels-like"></strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
